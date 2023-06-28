@@ -15,5 +15,5 @@ pub fn concat_idents(ts: TokenStream) -> TokenStream {
     };
     buf += &ident.to_string();
   }
-  quote!(buf).into()
+  quote!(#buf).into()
 }
